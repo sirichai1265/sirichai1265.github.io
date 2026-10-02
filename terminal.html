@@ -4,14 +4,9 @@
 <title>Thai Port Links</title>
 <noscript><p><a href="terminal-th.html">ภาษาไทย</a> · <a href="terminal-en.html">English</a></p></noscript>
 <script>
-// One URL, two languages: ?lang=th|en wins, then the last choice, then the browser language.
+// One URL, two languages: English by default; ?lang=th opens the Thai version.
 (function () {
-  var q = new URLSearchParams(location.search).get("lang"), saved = null;
-  try { saved = localStorage.getItem("terminalLang"); } catch (e) {}
-  var lang = (q === "th" || q === "en") ? q
-    : (saved === "th" || saved === "en") ? saved
-    : ((navigator.language || "").toLowerCase().indexOf("th") === 0 ? "th" : "en");
-  try { localStorage.setItem("terminalLang", lang); } catch (e) {}
+  var lang = new URLSearchParams(location.search).get("lang") === "th" ? "th" : "en";
   fetch("terminal-" + lang + ".html", { cache: "no-cache" }).then(function (r) { return r.text(); }).then(function (html) {
     document.open(); document.write(html); document.close();
   }).catch(function () { location.replace("terminal-" + lang + ".html"); });
