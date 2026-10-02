@@ -203,16 +203,16 @@ footer a { color: #fff; }
   <div class="hero-text">
     <div class="hero-copy">
       <span class="eyebrow">Thai Ports · Laem Chabang · Bangkok · UNITHAI</span>
-      <h1>ลิงก์เว็บไซต์ท่าเรือ</h1>
-      <p class="lede">รวมเว็บไซต์ ลิงก์ Open Gate ตารางเรือ และเบอร์โทรของท่าเรือแหลมฉบัง ท่าเรือกรุงเทพ และท่าเรือ UNITHAI ไว้ในที่เดียว</p>
+      <h1>Port Website Links</h1>
+      <p class="lede">Websites, Open Gate and vessel schedules, and phone numbers for Laem Chabang Port, Bangkok Port and UNITHAI terminal in one place.</p>
     </div>
     <div class="hero-side">
     <nav class="lang" aria-label="Language / ภาษา">
-      <a href="terminals.html" lang="th" aria-current="page">TH</a>
-      <a href="en.html" lang="en">EN</a>
+      <a href="terminals.html" lang="th">TH</a>
+      <a href="en.html" lang="en" aria-current="page">EN</a>
     </nav>
     <div class="clock" aria-live="off">
-      <span class="clock-label">เวลาท่าเรือ (ICT)</span>
+      <span class="clock-label">Port time (ICT)</span>
       <span class="clock-time" id="clock-time">--:--:--</span>
       <span class="clock-date" id="clock-date"></span>
     </div>
@@ -279,12 +279,12 @@ footer a { color: #fff; }
 <main class="wrap">
   <section aria-labelledby="map-title" style="display:grid;gap:12px">
     <div class="section-head">
-      <h2 class="section" id="map-title">แผนผังท่าเรือ</h2>
-      <span class="hint">กดที่ท่าเพื่อไปยังข้อมูลติดต่อ</span>
+      <h2 class="section" id="map-title">Port map</h2>
+      <span class="hint">Select a terminal to jump to its contacts</span>
     </div>
     <div class="harbour">
       <div class="port-group">
-        <span class="port-label">ท่าเรือแหลมฉบัง<small>THLCH</small></span>
+        <span class="port-label">Laem Chabang Port<small>THLCH</small></span>
         <div class="piers" style="--n:3">
           <div class="pier"><div class="pier-body">
             <span class="pier-name">BASIN A</span>
@@ -309,12 +309,12 @@ footer a { color: #fff; }
         </div>
       </div>
       <div class="port-group">
-        <span class="port-label">แม่น้ำเจ้าพระยา<small>THBKK</small></span>
+        <span class="port-label">Chao Phraya River<small>THBKK</small></span>
         <div class="piers" style="--n:2">
           <div class="pier"><div class="pier-body">
             <span class="pier-name">KLONG TOEY</span>
             <div class="berths">
-              <a class="berth" href="#bkp" style="--c:var(--c-bkp)"><b>BKP</b>ท่าเรือกรุงเทพ</a>
+              <a class="berth" href="#bkp" style="--c:var(--c-bkp)"><b>BKP</b>Bangkok Port</a>
             </div>
           </div></div>
           <div class="pier"><div class="pier-body">
@@ -330,16 +330,16 @@ footer a { color: #fff; }
 
   <section aria-labelledby="list-title" style="display:grid;gap:18px">
     <div class="section-head">
-      <h2 class="section" id="list-title">ท่าเรือและท่าเทียบเรือ</h2>
+      <h2 class="section" id="list-title">Ports and terminals</h2>
       <span class="count" id="count" aria-live="polite"></span>
     </div>
     <div class="search">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14M5 12H3a9 9 0 0 0 18 0h-2M8 10h8"/></svg>
-      <label for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">ค้นหาท่า</label>
-      <input id="q" type="search" placeholder="ค้นหาชื่อท่า รหัสท่า หรือเบอร์โทร เช่น LCIT, B3, UTCT" autocomplete="off">
+      <label for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search terminals</label>
+      <input id="q" type="search" placeholder="Search by name, berth or phone, e.g. LCIT, B3, UTCT" autocomplete="off">
     </div>
     <div id="groups" style="display:grid;gap:30px"></div>
-    <p class="empty" id="empty" hidden>ไม่พบท่าที่ตรงกับคำค้นหา ลองพิมพ์รหัสท่า เช่น A0 หรือ UTCT</p>
+    <p class="empty" id="empty" hidden>No terminal matches your search. Try a code such as A0 or UTCT.</p>
   </section>
 </main>
 
@@ -348,15 +348,15 @@ footer a { color: #fff; }
     <path d="M0 18 Q100 0 200 18 T400 18 T600 18 T800 18 T1000 18 T1200 18 T1400 18 T1600 18 V36 H0 Z" fill="#136aa8"/>
   </svg>
   <div class="inner">
-    <span>ข้อมูลท่าเรือ: <a href="https://www.port.co.th/" target="_blank" rel="noopener">การท่าเรือแห่งประเทศไทย</a></span>
-    <span>เบอร์โทรเป็นเบอร์กลางของแต่ละท่า</span>
+    <span>Port information: <a href="https://www.port.co.th/" target="_blank" rel="noopener">Port Authority of Thailand</a></span>
+    <span>Phone numbers are each terminal's main line.</span>
   </div>
 </footer>
 
 <script>
-const LANG = "th";
-const UI = {"website": "เว็บไซต์", "phone": "โทรศัพท์", "copy": "คัดลอก", "copyPhone": "คัดลอกเบอร์", "openSite": "เปิดเว็บไซต์", "copyLink": "คัดลอกลิงก์", "copied": "คัดลอกแล้ว", "pressCopy": "กด Ctrl+C"};
-const groups = {"lcb": {"name": "ท่าเรือแหลมฉบัง", "sub": "ชลบุรี · THLCH"}, "bkk": {"name": "ท่าเรือกรุงเทพ และท่าเรือ UNITHAI", "sub": "แม่น้ำเจ้าพระยา · THBKK"}};
+const LANG = "en";
+const UI = {"website": "Website", "phone": "Phone", "copy": "Copy", "copyPhone": "Copy phone", "openSite": "Open website", "copyLink": "Copy link", "copied": "Copied", "pressCopy": "Press Ctrl+C"};
+const groups = {"lcb": {"name": "Laem Chabang Port", "sub": "Chonburi · THLCH"}, "bkk": {"name": "Bangkok Port and UNITHAI", "sub": "Chao Phraya River · THBKK"}};
 const terminals = [
  {
   "id": "lcmt",
@@ -366,7 +366,7 @@ const terminals = [
   "markLabel": "BERTH",
   "mark": "A0",
   "name": "LCMT Co., Ltd.",
-  "desc": "บริษัทในเครือ LCB1 ดำเนินการท่าเทียบเรือ A0",
+  "desc": "LCB1 subsidiary operating berth A0.",
   "url": "https://www.lcb1.com/Home",
   "tel": "038-408-600",
   "links": [
@@ -385,7 +385,7 @@ const terminals = [
   "markLabel": "BERTH",
   "mark": "A3",
   "name": "Hutchison Ports Thailand",
-  "desc": "ท่าเทียบเรืออเนกประสงค์ A3 รองรับตู้สินค้าและสินค้าทั่วไป",
+  "desc": "Multipurpose terminal A3 handling containers and general cargo.",
   "url": "https://hutchisonports.co.th/terminal-a3/",
   "tel": "038-408-700",
   "links": [
@@ -404,7 +404,7 @@ const terminals = [
   "markLabel": "BERTH",
   "mark": "B3",
   "name": "Eastern Sea Laem Chabang Terminal",
-  "desc": "ท่าเทียบเรือตู้สินค้า B3 เปิดบริการ 24 ชั่วโมง",
+  "desc": "Container terminal B3, open 24 hours.",
   "url": "https://www.esco.co.th",
   "tel": "033-005-678",
   "links": [
@@ -423,7 +423,7 @@ const terminals = [
   "markLabel": "BERTH",
   "mark": "B5 / C3",
   "name": "Laem Chabang International Terminal",
-  "desc": "ท่าเทียบเรือตู้สินค้า B5 และ C3",
+  "desc": "Container terminals B5 and C3.",
   "url": "https://www.lcit.com",
   "tel": "038-408-200",
   "links": [
@@ -441,14 +441,14 @@ const terminals = [
   "color": "var(--c-bkp)",
   "markLabel": "PORT",
   "mark": "KLONG TOEY",
-  "name": "ท่าเรือกรุงเทพ (การท่าเรือแห่งประเทศไทย)",
-  "desc": "ท่าเรือคลองเตย ริมแม่น้ำเจ้าพระยา ดำเนินการโดยการท่าเรือแห่งประเทศไทย",
+  "name": "Bangkok Port (Port Authority of Thailand)",
+  "desc": "Klong Toey port on the Chao Phraya River, run by the Port Authority of Thailand.",
   "url": "https://bkpiservice.port.co.th",
   "tel": "02-269-3537",
   "links": [
    {
     "kind": "schedule",
-    "label": "ตารางเรือเข้า-ออก",
+    "label": "Vessel schedule",
     "url": "https://www.port.co.th/port/index.php/vesselentryexit-2/"
    },
    {
@@ -466,18 +466,18 @@ const terminals = [
   "markLabel": "PORT",
   "mark": "SAMUT PRAKAN",
   "name": "Unithai Container Terminal (UTCT)",
-  "desc": "ท่าเทียบเรือตู้สินค้าของ UNITHAI ที่สมุทรปราการ ปากแม่น้ำเจ้าพระยา",
+  "desc": "UNITHAI container terminal in Samut Prakan, at the mouth of the Chao Phraya River.",
   "url": "https://www.unithai.com/services/shipping-logistics/container-terminal/",
   "tel": "02-755-6888",
   "links": [
    {
     "kind": "schedule",
-    "label": "ตารางเรือ",
+    "label": "Vessel schedule",
     "url": "https://utctterminal.unithai.com/publishtrg/shSchedule.aspx"
    },
    {
     "kind": "track",
-    "label": "ติดตามตู้",
+    "label": "Container tracking",
     "url": "https://utctterminal.unithai.com/publishtrg/ctTracking.aspx"
    }
   ]
